@@ -1,8 +1,9 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircle from "./BackgroundCircle";
-import heropicture from "../Assets/Hero_pic.jpg";
+import hero_pic from "../Assets/Hero_pic.jpg";
 import Link from "next/link";
+import Image from "next/image";
 
 const Hero = () => {
   const [text, count] = useTypewriter({
@@ -23,10 +24,10 @@ const Hero = () => {
       justify-center text-center overflow-hidden"
     >
       <BackgroundCircle />
-      <img
+      <Image
+        src={hero_pic}
+        alt="Hero Picture"
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        src={heropicture.src}
-        alt="khunneng"
       />
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">

@@ -8,7 +8,8 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import ContactMe from "@/components/ContactMe";
 import Link from "next/link";
-import heroimg from "@/Assets/Hero_pic.jpg";
+import hero_img from "@/Assets/Hero_pic.jpg";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -46,11 +47,11 @@ export default function Home() {
       <Link href="#hero">
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
-            <img
+            <Image
               className="h-10 w-10 rounded-full grayscale 
               hover:grayscale-0 cursor-pointer"
-              src={heroimg.src}
-              alt="hero icon"
+              src={hero_img}
+              alt="Hero icon"
             />
           </div>
         </footer>

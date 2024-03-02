@@ -1,8 +1,7 @@
 import React from "react";
-import maclogo from "@/Assets/maclogo.png";
-import projectlogo from '@/Assets/project.jpeg';
-
+import project_pic from "@/Assets/project.jpeg";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 type Props = {};
 
@@ -31,23 +30,27 @@ function Projects({}: Props) {
       >
         {projects.map((project, i) => (
           <div
+          key={i}
             className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5
-           items-center justify-center p-20 md:p-44"
+           items-center justify-center p-20 mt-10 md:p-44"
           >
-            <div className="w-full flex items-center justify-center">
-              <motion.img
+            <div className="w-[70%]  flex items-center justify-center">
+              <motion.div
                 initial={{ y: -50, opacity: 0 }}
                 transition={{ duration: 1.2 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                src={projectlogo.src}
-                alt=""
-                className="lg:w-[50%] w-[70%]"
-              />
+              >
+                <Image
+                  src={project_pic}
+                  alt="Logo Project"
+                  className="md:w-[70%] md:h-[70%] lg:w-[50%] lg:h-[50%]"
+                />
+              </motion.div>
             </div>
 
-            <div className="space-y-0 px-0 md:px-10 max-w-6xl">
-              <h4 className="text-4xl font-semibold text-center">
+            <div className="space-y-0 px-0 md:px-10 max-w-6xl overflow-hidden">
+              <h4 className="text-2xl font-semibold text-center">
                 <span className="underline decoration-[#F7A80A]/50">
                   Case Study {i + 1} of {projects.length}:
                 </span>{" "}
@@ -57,8 +60,7 @@ function Projects({}: Props) {
               <p className="text-lg text-center md:text-left">
                 A strong project description provides a roadmap for stakeholders
                 and communicates the vision without getting bogged down in
-                details. We’ve compiled expert tips and sample project
-                descriptions to help you get started.
+                details. We&apos;ve compiled expert tips and sample project
               </p>
             </div>
           </div>
