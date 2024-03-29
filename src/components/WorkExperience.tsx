@@ -19,7 +19,7 @@ const WorkExperience = ({}: Props) => {
         </h3>
       </div>
       <div
-        className="md:w-[600px] xl:w-[900px] w-full flex space-x-5 overflow-x-scroll py-10 snap-x snap-mandatory
+        className="md:w-[600px] xl:w-[900px] w-full flex space-x-5 overflow-x-scroll py-5 snap-x snap-mandatory
       scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0B]/80"
       >
         <ExperienceCart />

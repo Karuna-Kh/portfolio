@@ -1,4 +1,4 @@
-"use client"; //for use framer-motion
+"use client";
 
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -51,7 +51,7 @@ export default function Home() {
               className="h-10 w-10 rounded-full grayscale 
               hover:grayscale-0 cursor-pointer"
               src={hero_img}
-              alt="Hero icon"
+              alt="Link icon to hero-page"
             />
           </div>
         </footer>

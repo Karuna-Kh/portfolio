@@ -29,8 +29,8 @@ function ExperienceCart({}: Props) {
       </motion.div>
 
       <div className="px-0 md:px-10">
-        <h4 className="text-4xl font-light">Senior of Programming</h4>
-        <p className="font-bold text-2xl mt-1">Chnnour Meanchey</p>
+        <h4 className="text-2xl md:text-4xl font-light">Senior of Programming</h4>
+        <p className="font-bold text-xl md:text-3xl mt-1">Chnnour Meanchey</p>
         <div className="flex space-x-2 my-2">
           <Image
             className="h-10 w-10 rounded-full"
@@ -53,12 +53,10 @@ function ExperienceCart({}: Props) {
             alt="JavaScript Icon"
           />
         </div>
-        <p className="uppercase py-5 text-gray-300">
-          Started work...... - Ended....
+        <p className="uppercase pt-5 pb-4 text-gray-300">
+          Started: 29-2-2019 - Ended: 02-10-2023
         </p>
-        <ul className="list-disc space-y-4 ml-5 text-lg">
-          <li>Summary points</li>
-          <li>Summary points</li>
+        <ul className="list-disc space-y-3 ml-5 text-lg">
           <li>Summary points</li>
           <li>Summary points</li>
           <li>Summary points</li>
